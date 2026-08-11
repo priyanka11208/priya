@@ -1,0 +1,136 @@
+<html>
+<head>
+<center>
+<title>Registration Form</title>
+<style>
+body
+{
+background-color:#c3691a;
+}
+.coloring
+{
+background-color:#ce5fa6;
+color:pink;
+}
+</style>
+<script>
+function check()
+{
+var Firstname=document.getElementById("firstname").value;
+alert(Firstname)
+if(!Firstname)
+{
+	alert("enter valid firstname");
+	return false;
+}
+else
+	alert("it's a valid firstname");
+
+
+
+var Lastname=document.getElementById("lastname").value;
+
+alert(Lastname);
+if(!Lastname)
+{
+	alert("enter valid lastname");
+	return false;
+
+}
+else
+	alert("it's a valid lastname");
+
+var Age=document.getElementById("age").value;
+alert(Age);
+if(!age)
+{
+	alert("enter valid age");
+	return false;
+
+var Phonenumber=document.getElementById("phonenumber").value;
+alert(Phonenumber)
+if(!Phonenumber)
+{
+	alert("enter valid phonenumber");
+	return false;
+}
+else
+	alert("it's a valid phonenumber");
+
+
+}
+
+var mail=document.getElementById("Email").value;
+
+alert(mail);
+if(!mail)
+{
+	alert("enter valid email");
+	return false;
+
+}
+else
+	alert("it's a valid email");
+
+
+var Address=document.getElementById("address").value;
+
+alert(Address);
+if(!Address)
+{
+	alert("enter valid address");
+	return false;
+}
+else
+	alert("it's a valid address");
+}
+</script>
+</head>
+<body>
+<form>
+<table>
+<h2>Registration Form</h2>
+
+<tr>
+<td>Firstname</td>
+<td><input type="text" name="firstname" id="firstname"></td>
+</tr>
+
+
+<tr>
+<td>Lastname</td>
+<td><input type="text" name="lastname" id="lastname"></td>
+</tr>
+
+
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" value="male">male</td>
+<td><input type="radio" name="gender" value="female">female</td>
+<td><input type="radio" name="gender" value="other">other</td>
+</tr>
+
+<tr>
+<td>Phonenumber</td>
+<td><input type="text" name="phonenumber" id="phonenumber"></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td><input type="text" name="Email" id="Email"></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td><textarea id="address" rows="4" colm="27"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="3" align="center">
+<input type="button" class="coloring" value="submit" onclick="check()">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

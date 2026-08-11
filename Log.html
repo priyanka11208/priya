@@ -1,0 +1,63 @@
+<html>
+<head>
+<center>
+<title>login form</title>
+<style>
+body
+{
+background-color:#d473a3;
+}
+.coloring
+{
+background-color:#cc9eb4;
+color:pink;
+}
+</style>
+<script>
+function check()
+{
+var username=document.getElementById("username").value
+var res=username.match(/[a-zA-Z]+/);
+alert(username)
+if(!username)
+{
+	alert("enter valid username");
+	return false;
+}
+else
+	alert("it's a valid username"); 
+
+var password=document.getElementById("password").value
+var res=password.match(/[a-zA-Z0-9@%#]{8}+/);
+alert(password)
+if(!password)
+{
+	alert("enter valid password");
+	return false;
+}
+else
+	alert("it's a valid password"); 
+{
+        alert(login successful");
+        return false;
+else
+        alert("login unsuccessfull");
+</script>
+</head>
+<body>
+<form action="1welcome.html" method="post" onsubmit="return validatelogin()">
+<h2>Login Form</h2>
+<table>
+<tr>
+<td><label>Username:</label></td>
+<td><input type="text" id=""username"></td>
+</tr>
+
+<td><label>Password:</label></td>
+<td><input type="password" id=""password"></td>
+</tr>
+</table>
+<input  type="submit"  class="coloring" value="Login" onclick="check()">
+</body>
+</center>
+</html>
